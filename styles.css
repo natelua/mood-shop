@@ -18,6 +18,12 @@ body {
     list-style: none
 }
 
+.page-header nav {
+    background-color: rebeccapurple;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+
 .page-header a {
     display: block;
     padding:0.5em;
