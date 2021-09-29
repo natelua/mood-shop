@@ -1,31 +1,40 @@
 body {
-    font-family: Helvetica;
+    font-family: impact;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
 }
+
 .page-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: bisque;
+    background-color: plum;
 }
 
 .page-header ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    list-style: none
-}
-
-.page-header nav {
-    background-color: rebeccapurple;
-    font-family:Georgia, 'Times New Roman', Times, serif
-
+    list-style: none;
 }
 
 .page-header a {
     display: block;
-    padding:0.5em;
+    padding: 0.5em;
     text-decoration: none;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-column-gap: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.item {
+    border: solid 1px;
+    width: 300px;
+    margin-top: 30px;
 }

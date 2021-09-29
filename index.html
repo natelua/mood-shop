@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel='stylesheet' href='styles.css' >
-    <title> Mood shop </title>
-  </head>
 
-  <header class='page-header'>
-    <h4>The Mood Shop</h4>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Cart</a></li>
-      </ul>
-    </nav>
-  </header>
+<head>
+    <title>Title of the document</title>
+    <link rel='stylesheet' href='./style.css'>
+</head>
 
-  <body>
-    <p> Hello World!</p>
-  </body>
+<body>
+    <header class='page-header'>
+        <h4>
+            The Mood Shop
+        </h4>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class='items' id='items'>
+        <!-- moods -->
+    </main>
+    <footer>
+    </footer>
+    <script src='./script.js' type="module">
+        const cart = [ ]
+        function addItem(name, price) { const item = {name: name, price: price, qty: 1} 
+        cart.push(item) } 
+        function showItem() { console.log(cart) } 
+        addItem('apple', 0.99) 
+        addItem('orange', 1.29) 
+        addItem('opinion', 0.02) 
+        showItems()
+    </script>
+    <!-- <script src='./resources/js/script.js' type="module">
+        const cart = [ ] function addItem(name, price) { const item = {name: name, price: price, qty: 1} cart.push(item) } function showItem() { console.log(cart) } addItem('apple', 0.99) addItem('orange', 1.29) addItem('opinion', 0.02) showItems()
+    </script> -->
+</body>
+
 </html>
